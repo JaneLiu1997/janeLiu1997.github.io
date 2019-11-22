@@ -16,7 +16,7 @@
     <meta name="description" content="" />
     
     <title>
-      Hello World!!! - MyBlog
+      使用 Hexo + Gitpage 建造靜態的個人網站 - MyBlog
     </title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -26,7 +26,7 @@
     
     <div id="post-toc" class="animated hiddenToc hide">
       <span class="title">Toc</span>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言："><span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#環境配置"><span class="toc-text">環境配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安裝Hexo"><span class="toc-text">安裝Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署網站"><span class="toc-text">部署網站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#在GitHub-創建一個-username-github-io-的專案"><span class="toc-text">在GitHub 創建一個 [username].github.io 的專案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在根目錄-config-yml-中修改-repository-名稱"><span class="toc-text">在根目錄 _config.yml 中修改 repository 名稱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置一下本地帳戶"><span class="toc-text">配置一下本地帳戶</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#發佈到-GitHub"><span class="toc-text">發佈到 GitHub</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#踩過的那些坑"><span class="toc-text">踩過的那些坑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo-deploy-報錯"><span class="toc-text">hexo deploy 報錯</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Could-not-resolve-hostname-github-com-zhengpq-Name-or-service-not-known"><span class="toc-text">Could not resolve hostname github.com:zhengpq: Name or service not known</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mac-權限"><span class="toc-text">Ｍac 權限</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#結語"><span class="toc-text">結語</span></a></li></ol>
     </div>
     
     <div id="fixed-menu-wrap">
@@ -172,7 +172,7 @@
         <article class="post-entry">
     <div class="header">
       
-      <div class="title">Hello World!!!</div>
+      <div class="title">使用 Hexo + Gitpage 建造靜態的個人網站</div>
       <div class="meta">
         <span class="item">
           <span class="iconfont icon-time-circle"></span>
@@ -188,19 +188,61 @@
       <div>
       </div>
     </div>
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start<a class="post-anchor" href="#Quick-Start"></a></h2><h3 id="Create-a-new-post">Create a new post<a class="post-anchor" href="#Create-a-new-post"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <p>與其說是教學文章，不如説是我自己的小小筆記<br>也當作是自己學習歷程的歸納整理，反正應該沒有人會看（笑</p>
+<h2 id="前言：">前言：<a class="post-anchor" href="#前言："></a></h2><hr>
+<p>我想我就不在這邊贅述 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 是什麼了，有興趣的讀者可以去官網看看，<br>或許有時間我可以寫一篇關於hexo 的介紹</p>
+<h2 id="環境配置">環境配置<a class="post-anchor" href="#環境配置"></a></h2><ul>
+<li>安裝 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> (Node.js 版本需不低於8.6，建議使用 Node.js 10.0 及以上版本)</li>
+<li>安裝 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+</ul>
+<p>你可以透過指令的方式確認是否安裝好軟體</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">$ git --version</span><br></pre></td></tr></table></figure>
+<p><a href="/images/version.png" data-caption data-fancybox="images"><img src="/images/version.png" alt></a></p>
+<h2 id="安裝Hexo">安裝Hexo<a class="post-anchor" href="#安裝Hexo"></a></h2><p><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="noopener">官方文件</a>寫的很清楚簡潔，跟著步驟做就可以把 hexo 建置起來嚕</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g      // 透過 npm 安裝 Hexo</span><br><span class="line">$ hexo init &lt;yourFolderName&gt;   // 用 hexo 指令建一個資料夾</span><br><span class="line">$ <span class="built_in">cd</span> &lt;yourFolderName&gt;          // 進到資料夾（yourFolderName）內</span><br><span class="line">$ npm install                  // 下載 npm</span><br><span class="line">$ hexo server                  // 啟動 hexo 伺服器，預設的url是 http://localhost:4000/。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>啟動 hexo 伺服器後就可以看到一個預設的Blog ～ </p>
+</blockquote>
+<h2 id="部署網站">部署網站<a class="post-anchor" href="#部署網站"></a></h2><p>部署的方式有很多種，但我覺得 Github Page 是最簡單的，我的這個網站也是使用 Github Page 建立的。<br>接下來就以部署到 Github Page 上的方式當做例子～</p>
+<h3 id="在GitHub-創建一個-username-github-io-的專案">在GitHub 創建一個 [username].github.io 的專案<a class="post-anchor" href="#在GitHub-創建一個-username-github-io-的專案"></a></h3><p><a href="/images/new-repository.png" data-caption data-fancybox="images"><img src="/images/new-repository.png" alt></a></p>
+<blockquote>
+<p>右上角有一個 ＋ 打開後選擇 New Repository</p>
+</blockquote>
+<h3 id="在根目錄-config-yml-中修改-repository-名稱">在根目錄 _config.yml 中修改 repository 名稱<a class="post-anchor" href="#在根目錄-config-yml-中修改-repository-名稱"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo: https://github.com/JaneLiu1997/janeLiu1997.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line">    message: blog</span><br></pre></td></tr></table></figure>
+<p><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment Docs</a></p>
+<h3 id="配置一下本地帳戶">配置一下本地帳戶<a class="post-anchor" href="#配置一下本地帳戶"></a></h3><p>如果之前沒有創建，則執行以下命令全局</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"git user name"</span></span><br><span class="line">$ git config --global user.email <span class="string">"git user email"</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server">Run server<a class="post-anchor" href="#Run-server"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="發佈到-GitHub">發佈到 GitHub<a class="post-anchor" href="#發佈到-GitHub"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate (hexo g)  // 產生靜態檔案，在目錄下產生public 資料夾</span><br><span class="line">$ hexo deploy (hexo d)    // 部署網站（ Ex: github, heroku ... 等平台 ）</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files">Generate static files<a class="post-anchor" href="#Generate-static-files"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>如果順利的話，在 Browser 打上 [username].github.io 就可以看到自己的網站惹</p>
+<p>但<br>.<br>.<br>.</p>
+<p>我發佈到 GitHub時才沒有那麼順利 Ｔ.T</p>
+<h2 id="踩過的那些坑">踩過的那些坑<a class="post-anchor" href="#踩過的那些坑"></a></h2><h3 id="hexo-deploy-報錯">hexo deploy 報錯<a class="post-anchor" href="#hexo-deploy-報錯"></a></h3><p>當時遇到錯誤的訊息時，忘記截圖好做成筆記了，總之我也是上網爬了一下文，這邊借用一下別人的錯誤訊息，<br>大致上是跟我遇到的問題一樣。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">nothing to commit, working directory clean</span><br><span class="line">Permission denied (publickey).</span><br><span class="line">fatal: Could not <span class="built_in">read</span> from remote repository.</span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something<span class="string">'s wrong. Maybe you can find the solution here: [http://hexo.io/docs/troubleshooting.html](http://hexo.io/docs/troubleshooting.html)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Error: Permission denied (publickey).  // 這一行才是重點！！！ 快筆記起來 哈哈</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">fatal: Could not read from remote repository.</span></span><br><span class="line"><span class="string">Please make sure you have the correct access rights</span></span><br><span class="line"><span class="string">and the repository exists.</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites<a class="post-anchor" href="#Deploy-to-remote-sites"></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>解決方法：跟著<a href="https://help.github.com/cn/github/authenticating-to-github/error-permission-denied-publickey" target="_blank" rel="noopener">官方文件</a>的步驟做，基本上就可以解決摟 ～</p>
+</blockquote>
+<h3 id="Could-not-resolve-hostname-github-com-zhengpq-Name-or-service-not-known">Could not resolve hostname github.com:zhengpq: Name or service not known<a class="post-anchor" href="#Could-not-resolve-hostname-github-com-zhengpq-Name-or-service-not-known"></a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">ssh: Could not resolve hostname github.com:zhengpq: Name or service not known</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: ssh: Could not resolve hostname github.com:zhengpq: Name or service not known</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exist</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<blockquote>
+<p>解決方法： 把deply repo的值換成https的Git倉庫clone地址就可以了<br>tip: ( 記得如果你本來是使用ssh 遠程倉庫的 URL ，要更新新使用 HTTPS)</p>
+</blockquote>
+<ul>
+<li>git remote set-url 命令可更改現有遠端資料庫的 URL </li>
+</ul>
+<p>Example: 將遠端 URL 從 SSH 切換到 HTTPS</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$   git remote -v // 列出現有遠端資料庫的名稱</span><br><span class="line">   // Change your remote<span class="string">'s  URL from SSH to HTTPS with the git remote set-url command</span></span><br><span class="line"><span class="string">$   git remote set-url origin https://github.com/USERNAME/REPOSITORY.git</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Mac-權限">Ｍac 權限<a class="post-anchor" href="#Mac-權限"></a></h3><p>當我排除萬難設置好文件，打了指令 hexo d 準備期待發佈我的網站時，又出現了錯誤訊息…</p>
+<p><a href="/images/hexo-d-error.png" data-caption data-fancybox="images"><img src="/images/hexo-d-error.png" alt></a></p>
+<p>其實這個也是權限的問題，我最後是在指令的前面加上 sudo </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo hexo d</span><br></pre></td></tr></table></figure>
+
+<p>補充: sudo 是 Unix/Linux 平臺上的一個非常有用的工具，它允許系統管理員分配給一般用戶合理的權限，讓他們執行一些只有系統管理員或其他特定帳號才能完成的任務，例如：執行 mount, halt, su 這類的指令，或者編輯系統設定檔 (/etc/mtab, /etc/samba/smb.conf 等)。這樣一來，不僅減少了 root 使用者的登錄次數和管理時間，也提高了系統安全性。)</p>
+<h2 id="結語">結語<a class="post-anchor" href="#結語"></a></h2><p>千心萬苦都是為了實踐自己的想法，雖然在電腦前鬼吼鬼叫，嫌東又嫌西，嘴巴上説著算了、太麻煩不弄了，身體還是邊上網爬文找解決方法，總覺得再賭一次也許就會成功（ 賭性堅強的台灣人～ ）</p>
+<p>～ 有時後成功就是需要加一點點的堅持，下一秒就會不一樣 ～</p>
 
 
   <!--  -->
